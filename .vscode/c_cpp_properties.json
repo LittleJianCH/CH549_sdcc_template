@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "8051",
+            "includePath": [
+                "${workspaceFolder}/lib/**"
+            ],
+            "compilerPath": "/opt/homebrew/bin/sdcc",
+            "intelliSenseMode": "${default}",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "mergeConfigurations": false,
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "forcedInclude": [
+                "${workspaceFolder}/lib/c51_intr.h"
+            ],
+            "configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+    "version": 4
+}
