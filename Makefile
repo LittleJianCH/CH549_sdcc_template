@@ -9,6 +9,7 @@ all: main.hex
 
 main.hex: main.ihx
 	packihx out/main.ihx > out/main.hex
+	python3 scripts/lf2crlf.py out/main.hex
 
 main.ihx: $(OBJS)
 	mkdir -p out
